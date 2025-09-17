@@ -18,21 +18,29 @@ Como ejecutar pruebas unitarias:
 1. Clic derecho en gestionTareasServicios
 2. Clic en Run 'Test in 'gestionTaresServicios''
 
-Endpoints Principales
-#### Usuarios
+Endpoints Principales 
+Usuarios:
 - `POST /usuarios` : Registro
 - `POST /login` : Autenticación
 
-#### Tareas (requiere JWT)
+Tareas:
 - `GET /tareas/{usuarioId}` : Listar tareas por id usuario
 - `POST /tareas/{usuarioId}`: Crear tarea por id usuario
 - `PUT /tareas/{tareaId}/usuario/{usuarioId}` : Editar tarea por id tarea e id usuario
 - `DELETE /tareas/{tareaId}/usuario/{usuarioId}` : Eliminar tarea por id usuario e id tarea
 
-Pruebas unitaria
+Pruebas unitarias:
 UsuarioServiciosTest: prueba creación de usuario y validación de email duplicado
 
-Colección postman
+Colección postman:
 - Incluye registro, login y operaciones CRUD
-- Exportada en formato `.json` para evaluación
+- Exportada en formato `.json` 
 Ubicacion: Denttro de la apirest-gestionTares -> Postman
+
+Configuración de la base de datos:
+Antes de ejecutar el proyecto, asegurse de tener creada la base de datos:
+Nombre: `tareas`  
+Motor: MySQL 
+Usuario:`root`
+Contraseña: `admin`
+
