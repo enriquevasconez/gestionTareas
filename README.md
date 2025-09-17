@@ -30,7 +30,7 @@ Tareas:
 - `DELETE /tareas/{tareaId}/usuario/{usuarioId}` : Eliminar tarea por id usuario e id tarea
 
 Pruebas unitarias:
-UsuarioServiciosTest: prueba creación de usuario y validación de email duplicado
+- UsuarioServiciosTest: prueba creación de usuario y validación de email duplicado
 
 Colección postman:
 - Incluye registro, login y operaciones CRUD
@@ -39,8 +39,8 @@ Ubicacion: Denttro de la apirest-gestionTares -> Postman
 
 Configuración de la base de datos:
 Antes de ejecutar el proyecto, asegurse de tener creada la base de datos:
-Nombre: `tareas`  
-Motor: MySQL 
-Usuario:`root`
-Contraseña: `admin`
+- Nombre: `tareas`
+- Motor: MySQL 
+- Usuario:`root`
+- Contraseña: `admin`
 
